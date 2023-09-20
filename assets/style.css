@@ -1,0 +1,79 @@
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: aquamarine;
+    align-items: center;
+}
+
+nav a {
+text-decoration: none;
+color: black;
+}
+
+#about h2 {
+border-right: solid black 6px;
+margin-right: 6px;
+}
+main #about {
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article figure {
+    background-color: blueviolet;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+
+#img1 {
+    flex: 2;
+    flex-basis: 100%;
+    background-image: url(./images/boxing\ ring.jpg);
+}
+
+#img2, 
+#img3, 
+#img4, 
+#img5 {
+/*flex: 1;
+flex-basis: 100%;*/
+width: 35%;
+}
+
+#img2 {
+background-image: url(./images/gaming-keyboard.jpg);
+}
+
+#img3 {
+    background-image: url(./images/chalkboard.jpg);
+    }
+
+#img4 {
+    background-image: url(./images/drweightloss.jpg);
+}
+
+#img5 {
+    background-image: url(./images/Fantasy-football-image.png);
+    }
+
+@media screen and (max-width: 600px) {
+ #img2, 
+ #img3, 
+ #img4, 
+ #img5 {
+    width: 100%;
+ }
+}
